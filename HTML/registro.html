@@ -1,64 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RestaurantFigueroa</title>
-    <link rel="stylesheet" href="Images/LogoFigueroa.png">
-    <link rel="stylesheet" href="..//CSS/styles.css">
+    <script src="https://kit.fontawesome.com/76e1b679aa.js" crossorigin="anonymous"></script>
+    <title>FigueroaShop</title>
+    <link rel="stylesheet" href="Images/LogoFigueroa.png">  
+    <link rel="stylesheet" href="../CSS/styles-registro.css">
 </head>
 <body>
     <header>
         <nav>
-            <section class="navegador nav">
+            <section class="navegador-nav">
                 <div class="enlaces-header">
-                    <a href="index.html">inicio</a>
-                    <a href="registro.html">Registrate</a>
-                    <a href="alimentos.html">Alimentos</a>
-                    <a href="horario.html">Horario</a>
+                    <a class="enlaces" href="index.html">Inicio</a>
+                    <a class="enlaces" href="registro.html">Registrate</a>
+                    <a class="enlaces" href="/HTML/index.html#SeccionHombre">Seccion Hombres</a>
+                    <a class="enlaces" href="/HTML/index.html#SeccionMujer">Seccion Mujer</a>
+                    <a class="enlaces" href="/HTML/index.html#SeccionZapatos">Seccion Zapatos</a>
                 </div>
-            </section>
-        </nav>
-        <div>
-            <img class="logo-1" src="../Images/LogoFigueroa.png" alt="">
-        </div>
-    </header>
+            </section> <hr>
+        </nav> 
+    </header>   
+    <div class="imagen">
+        <img class="logo-1" src="../Images/LogoFigueroa.png" alt="">
+    </div>
     <div class="container">
-        <div class="form">
-            <div class="title">
-                <h1>form register</h1>
-                <p>Registrate y paga tu producto</p>
+        <h1>Registrate</h1>
+        <div class="Form">
+            <div class="Form">
+                <label for="name">Name:</label>
+                <input class="input" type="text" name="name" id="name" placeholder="Ingrese su nombre" autocomplete="off">
             </div>
-            <div class= "body_form">
-                <div class="row_form">
-                    <label for="" class="label_form">name:</label>
-                    <input type="text" class="input_form" placeholder="Escriba su nombre ">
-                </div>
-                <div class="row_form">
-                    <label for="" class="label_form">Last name:</label>
-                    <input type="text" class="input_form" placeholder="Escriba su apellido ">
-                </div>
-                <div class="row_form">
-                    <label for="" class="label_form">Phone:</label>
-                    <input type="number" class="input_form" placeholder="Escriba su telefono " maxlength="10" minlength="10">
-                </div>
-                <div class="row_form">
-                    <label for="" class="label_form">E-mail:</label>
-                    <input type="email" class="input_form" placeholder="Escriba su correo electronico " >
-                </div>
+            <div class="Form">
+                <label for="Last_name">Last Name</label>
+                <input class="input" type="text" name="Last_name" id="Last_name" placeholder="Ingrese sus apellidos" autocomplete="off">
             </div>
-                <div class="row_form">
-                    <label for="" class="label_form">Password:</label>
-                    <input type="password" class="input_form" placeholder="Escriba su contraseña " >
-                </div>
-                <div class="row_form">
-                    <label for="" class="label_form">Repeat password:</label>
-                    <input type="password" class="input_form" placeholder="repita su contraseña " >
-                </div>
-                <div class="row_form">
-                    <button class="button_form">send</button>
-                </div>
+            <div class="Form">
+                <label for="email">email:</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Ingrese su correo"
+                autocomplete="off">
             </div>
+            <div class="Form">
+                <label for="Password">Password:</label>
+                <input class="input" type="password" name="password" id="password" placeholder="Ingrese su contraseña" autocomplete="off">
+            </div>
+        </div>
+        <div class="Send">
+            <button class="button"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </div>
 </body>
